@@ -29,4 +29,4 @@
     public static **[] values(); public static ** valueOf(java.lang.String);
 }
 
--keepclasseswithmembernames org.nuclear.components.kit.DispatchQueue { *; }
+-keepclasseswithmembernames class org.nuclear.components.kit.DispatchQueue { *; }
