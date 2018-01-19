@@ -10,6 +10,7 @@ import java.util.concurrent.CountDownLatch
  */
 
 val mainThread = DispatchQueue.main
+
 val uiThread = mainThread
 
 fun doAsync(runnable: () -> Unit) = DispatchQueue.global.post(runnable)
