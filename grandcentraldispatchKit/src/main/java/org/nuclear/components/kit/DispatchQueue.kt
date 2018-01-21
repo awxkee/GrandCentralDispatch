@@ -16,7 +16,7 @@ val uiThread = mainThread
 fun doAsync(runnable: () -> Unit) = DispatchQueue.global.post(runnable)
 fun uiThread(runnable: () -> Unit) = uiThread.post(runnable)
 
-public class DispatchQueue(threadName: String) : Thread() {
+public open class DispatchQueue(threadName: String) : Thread() {
 
     companion object {
         val global by lazy {
